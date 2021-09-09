@@ -1,0 +1,37 @@
+<nav class="rosa navbar navbar-expand-lg ">
+    <a class="navbar-brand" routerLink="/home">Sala de Juegos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto" *ngIf="user$ | async as user; else login">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/home">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/quiensoy">¿Quien Soy?</a>
+            </li>
+            <li class="nav-item" *ngIf="user">
+                <span class="nav-link">{{user?.email }}</span>
+            </li>
+            <li class="nav-item" *ngIf="user">
+                <a class="nav-link" (click)="logOut()">Logout</a>
+            </li>
+        </ul>
+        <ng-template #login>
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/registro">Registro</a>
+                </li>
+            </ul>
+        </ng-template>
+    </div>
+</nav>
