@@ -1,4 +1,3 @@
-<app-menu></app-menu>
 <div class="containerD">
     <br>
     <div class="hero-text">
@@ -7,5 +6,30 @@
         </div>
 
     </div>
+    <div class="menu-container">
+        <div class="fill" routerLink="/juegos">
+            <span></span>
+            <div class="content">
+                <h2>Juegos </h2>
+            </div>
+        </div>
 
+        <div class="fill">
+            <span></span>
+            <div class="content">
+                <h2> </h2>
+            </div>
+        </div>
+
+        <div class="fill">
+            <span></span>
+            <div class="content">
+                <h2></h2>
+
+            </div>
+        </div>
+
+
+    </div>
 </div>
+<app-chat *ngIf="user$ | async as user; "></app-chat>

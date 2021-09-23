@@ -1,0 +1,40 @@
+<div class="containerT">
+
+    <div class="container">
+
+        <h1>Juegos</h1>
+        <div class="menu-container">
+            <div class="fill" routerLink="/juegos/mijuego">
+                <span></span>
+                <div (click)="irMijuego()" class="content">
+                    <h2>Mi juego </h2>
+                    <p>Rompecabezas, ordenar los numeros</p>
+                </div>
+
+            </div>
+            <div class="fill" (click)="irAhorcado()">
+                <span></span>
+                <div class="content">
+                    <h2>Ahorcado</h2>
+                    <p>Completa la palabra</p>
+                </div>
+
+            </div>
+            <div class="fill" (click)="irMayorMenor()">
+                <span></span>
+                <div class="content">
+                    <h2>Mayor o menor</h2>
+                    <p>Adivina si el numero es mayor o menor</p>
+                </div>
+
+            </div>
+            <div class="fill" (click)="irPreguntados()">
+                <span></span>
+                <div class="content">
+                    <h2>Preguntados</h2>
+                    <p>Responde la trivia</p>
+                </div>
+
+            </div>
+        </div>
+    </div>

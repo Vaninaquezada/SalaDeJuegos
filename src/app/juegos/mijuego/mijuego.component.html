@@ -1,0 +1,29 @@
+<div class="juegoContainer">
+    <div class="juego">
+        <div class="game">
+            <div class="overlay-text {{start}}" (click)="clickBoton()">
+                Click para empezar
+            </div>
+            <div id="victory-text" class="overlay-text {{victoria}}" (click)="clickBoton()">
+                Ganaste!!!
+                <span class="overlay-text-small"><br> <br> <br> <br>Click para jugar de nuevo</span>
+            </div>
+            <div class="grid">
+                <button *ngFor="let item of contenido;index as indice"
+                    (click)="handleClickBox(indice)">{{contenido[indice]}}</button>
+
+            </div>
+
+            <div class="footer">
+                <button (click)="clickBoton()">{{boton}}</button>
+                <span id="move">Movimiento: {{estado.move}}</span>
+
+            </div>
+            <div class="footer">
+                <button class="ordenar" (click)="ordenar()">Ordenar para ganar</button>
+                <span id="time">Tiempo: {{estado.time}}</span>
+            </div>
+        </div>
+
+    </div>
+</div>

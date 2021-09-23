@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'quiensoy', component: QuienSoyComponent },
   { path: 'registro', component: RegistroComponent },
+  { path: 'juegos', loadChildren: () => import('./juegos/juegos.module').then(m => m.JuegosModule) },
 ];
 
 @NgModule({

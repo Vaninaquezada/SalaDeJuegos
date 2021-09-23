@@ -15,6 +15,12 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ChatComponent } from './componentes/chat/chat.component';
+import { JuegosModule } from './juegos/juegos.module';
+import { HttpClientModule } from '@angular/common/http';
+import { MijuegoComponent } from './juegos/mijuego/mijuego.component';
+import { AhorcadoComponent } from './juegos/ahorcado/ahorcado.component';
+import { MayorOmenorComponent } from './juegos/mayor-omenor/mayor-omenor.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +29,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RegistroComponent,
     HomeComponent,
     QuienSoyComponent,
-    MenuComponent
+    MenuComponent,
+    ChatComponent,
+    MijuegoComponent,
+    MayorOmenorComponent,
+    AhorcadoComponent
   ],
   imports: [
     BrowserModule,
@@ -32,10 +42,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     RouterModule,
+    JuegosModule,
     AngularFirestoreModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
+  exports: [MenuComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

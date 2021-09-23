@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { first, switchMap } from 'rxjs/operators';
+import { filter, first, switchMap } from 'rxjs/operators';
 import firebase from 'firebase/app';
 //import User from "firebase"
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore'
@@ -27,18 +27,28 @@ export class AuthService {
   }
 
   async login(email: string, password: string) {
-    try {
-      const { user } = await this.afAuth.signInWithEmailAndPassword(
-        email,
-        password
-      );
-      this.updateLogUser(email);
-      return user;
-    } catch (error) {
-      console.log(error);
-    }
-    return null;
+
+    /*    return this.afAuth.signInWithEmailAndPassword(
+          email,
+          password
+        );
+        */
+    //   try {
+    return this.afAuth.signInWithEmailAndPassword(
+      email,
+      password
+    );
+    //   console.log("sericio user" + user);
+
+
+    /* } catch (error) {
+       console.log("sericio" + error);
+       return error;
+     }
+ */
   }
+
+
   async registro(email: string, password: string) {
     try {
       const { user } = await this.afAuth.createUserWithEmailAndPassword(
@@ -49,8 +59,8 @@ export class AuthService {
       return user;
     } catch (error) {
       console.log(error);
+      return error;
     }
-    return null;
   }
   async logout() {
     try {
