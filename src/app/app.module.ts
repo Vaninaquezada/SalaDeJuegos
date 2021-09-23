@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MijuegoComponent } from './juegos/mijuego/mijuego.component';
 import { AhorcadoComponent } from './juegos/ahorcado/ahorcado.component';
 import { MayorOmenorComponent } from './juegos/mayor-omenor/mayor-omenor.component';
+import { ErrorNoLogueadoComponent } from './pages/error-no-logueado/error-no-logueado.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MayorOmenorComponent } from './juegos/mayor-omenor/mayor-omenor.compone
     ChatComponent,
     MijuegoComponent,
     MayorOmenorComponent,
-    AhorcadoComponent
+    AhorcadoComponent,
+    ErrorNoLogueadoComponent
   ],
   imports: [
     BrowserModule,
