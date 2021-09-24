@@ -1,5 +1,6 @@
 export interface Words {
     letter: any,
-    hidden: boolean
+    hidden?: boolean,
+    disabled?: boolean,
 
 }

@@ -19,6 +19,7 @@
     font-weight: 400;
     font-size: 100%;
     background: #f1f1f1;
+    z-index: 20;
 }
 
 /* 300;0,400;0,600;1,300 */
@@ -28,6 +29,7 @@ body {
     font-weight: 400;
     font-size: 100%;
     background: #f1f1f1;
+    z-index: 20;
 }
 
 .chatbox__support {

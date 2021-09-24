@@ -18,7 +18,7 @@ export class LogueadoGuard implements CanActivate {
     if (await this.authSvc.getUsuario()) {
       return true
     }
-    this.router.navigate(['/NoLogueado']);
+    this.router.navigate(['/error']);
     return false;
 
   }

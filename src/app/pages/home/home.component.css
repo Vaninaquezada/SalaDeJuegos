@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,900&display=swap");
+@import url("http://fonts.cdnfonts.com/css/pastel-colors");
+
 * {
     margin: 0;
     padding: 0;
@@ -58,7 +61,7 @@
 
 .menu-container .fill .content {
     position: relative;
-    z-index: 10;
+    z-index: 0;
     padding: 20px 40px;
 }
 
@@ -89,5 +92,9 @@ h1 {
 }
 h2 {
     font-family: "Pastel Colors", sans-serif;
-    font-size: 3.1em;
+    font-size: 4.1em;
+    z-index: -1;
+}
+.chat {
+    z-index: 30;
 }

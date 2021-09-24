@@ -1,3 +1,4 @@
+<app-chat *ngIf="user$ | async as user; "></app-chat>
 <div class="containerD">
     <br>
     <div class="hero-text">
@@ -14,22 +15,24 @@
             </div>
         </div>
 
-        <div class="fill">
+        <div class="fill" routerLink="/encuesta">
             <span></span>
             <div class="content">
-                <h2> </h2>
+                <h2>Encuesta</h2>
             </div>
         </div>
 
-        <div class="fill">
+        <div class="fill" routerLink="/listados">
             <span></span>
             <div class="content">
-                <h2></h2>
+                <h2>Resultados</h2>
 
             </div>
         </div>
 
 
     </div>
+    <div class="chat">
+        <app-chat *ngIf="user$ | async as user; "></app-chat>
+    </div>
 </div>
-<app-chat *ngIf="user$ | async as user; "></app-chat>

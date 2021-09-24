@@ -27,6 +27,7 @@ export class ListadoService {
       resultado: result.resultado,
       clicks: result.clicks,
       juego: result.juego,
+      errores: result.errores,
       createdAt: firebase.firestore.FieldValue.serverTimestamp()
     });
   }

@@ -1,0 +1,25 @@
+<table class="table table-condensed">
+    <thead>
+        <tr>
+            <th>Juego</th>
+            <th>Jugador</th>
+            <th>Resultado</th>
+            <th>errores</th>
+            <th>Movimientos</th>
+            <th>Tiempo</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let juego of lista | async">
+            <td>{{juego.juego}} </td>
+            <td>{{juego.usuario}} </td>
+            <td>{{juego.resultado}} </td>
+            <td>{{juego.errores}} </td>
+            <td>{{juego.clicks}} </td>
+            <td>{{juego.tiempo}} </td>
+            <td>{{juego.createdAt?.toMillis() | date:'short' }} </td>
+        </tr>
+
+    </tbody>
+</table>

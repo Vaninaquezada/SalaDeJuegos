@@ -22,6 +22,8 @@ import { MijuegoComponent } from './juegos/mijuego/mijuego.component';
 import { AhorcadoComponent } from './juegos/ahorcado/ahorcado.component';
 import { MayorOmenorComponent } from './juegos/mayor-omenor/mayor-omenor.component';
 import { ErrorNoLogueadoComponent } from './pages/error-no-logueado/error-no-logueado.component';
+import { EncuestaComponent } from './pages/encuesta/encuesta.component';
+import { ListadosComponent } from './pages/listados/listados.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ErrorNoLogueadoComponent } from './pages/error-no-logueado/error-no-log
     MijuegoComponent,
     MayorOmenorComponent,
     AhorcadoComponent,
-    ErrorNoLogueadoComponent
+    ErrorNoLogueadoComponent,
+    EncuestaComponent,
+    ListadosComponent
   ],
   imports: [
     BrowserModule,
