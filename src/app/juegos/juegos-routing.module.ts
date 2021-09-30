@@ -4,6 +4,7 @@ import { AhorcadoComponent } from './ahorcado/ahorcado.component';
 import { JuegosComponent } from './juegos.component';
 import { MayorOmenorComponent } from './mayor-omenor/mayor-omenor.component';
 import { MijuegoComponent } from './mijuego/mijuego.component';
+import { PreguntadosComponent } from './preguntados/preguntados.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,11 @@ const routes: Routes = [
     path: 'mijuego',
     component: MijuegoComponent
   },
+  {
+    path: 'preguntados',
+    component: PreguntadosComponent
+  },
+
 
 ];
 

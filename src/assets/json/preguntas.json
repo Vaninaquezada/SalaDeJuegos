@@ -1,0 +1,102 @@
+[
+    {
+        "categoria": "Entretenimiento",
+        "pregunta": "¿Cómo se llama el papá de Bart?",
+        "respuesta": "Homero",
+        "incorrecta1": "Samuel",
+        "incorrecta2": "Miguel",
+        "incorrecta3": "Pitagoras",
+        "imagen": "https://i.ibb.co/DM5Ns0D/Los-simpsos.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Entretenimiento",
+        "pregunta": "¿Cómo se llama el guionista de 'Watchmen'?",
+        "respuesta": "Alan Moore",
+        "incorrecta1": "Samuel",
+        "incorrecta2": "Miguel",
+        "incorrecta3": "Pitagoras",
+        "imagen": "https://i.ibb.co/f43HdQQ/homer.jpg",
+        "objectFit": "contain"
+    },
+    {
+        "categoria": "Entretenimiento",
+        "pregunta": "¿Quién es el protagonista de la serie 'Cowboy Bebop'?",
+        "respuesta": "Spike Spiegel",
+        "incorrecta1": "Julia",
+        "incorrecta2": "Ed",
+        "incorrecta3": "Juan"
+    },
+    {
+        "categoria": "Entretenimiento",
+        "pregunta": "¿Quién es el antagonista de la película El Rey León?",
+        "respuesta": "Scar",
+        "incorrecta1": "Simba",
+        "incorrecta2": "Lupita",
+        "incorrecta3": "Jafar"
+    },
+    {
+        "categoria": "Entretenimiento",
+        "pregunta": "Serie americana donde los personajes son amarillos",
+        "respuesta": "Los Simpson",
+        "incorrecta1": "Padre de familia",
+        "incorrecta2": "South park",
+        "incorrecta3": "La casa de los dibujos"
+    },
+    {
+        "categoria": "Entretenimiento",
+        "pregunta": "¿Cómo se llama la ciudad en la que vivía el Mago de Oz?",
+        "respuesta": "Avengers: Endgame",
+        "incorrecta1": "Ciudad Celeste",
+        "incorrecta2": "Ciudad Carmín",
+        "incorrecta3": "Ciudad Azulona"
+    },
+    {
+        "categoria": "Entretenimiento",
+        "pregunta": "¿Cuál es la película más taquillera de la historia?",
+        "respuesta": "Avengers: Endgame",
+        "incorrecta1": "Titanic",
+        "incorrecta2": "Batman",
+        "incorrecta3": "La sirenita"
+    },
+    {
+        "categoria": "Arte y literatura",
+        "pregunta": "¿De dónde son originarios los haikus?",
+        "respuesta": "Japon",
+        "incorrecta1": "Jamaica",
+        "incorrecta2": "China",
+        "incorrecta3": "España"
+    },
+    {
+        "categoria": "Arte y literatura",
+        "pregunta": "¿Quién pintó la Capilla Sixtina?",
+        "respuesta": "Miguel Ángel",
+        "incorrecta1": "Mi prima",
+        "incorrecta2": "Leonardo Da Vinci",
+        "incorrecta3": "Pablo Picaso"
+    },
+    {
+        "categoria": "Deportes",
+        "pregunta": "¿Qué selección ganó el Mundial de fútbol de Brasil en el 2014?",
+        "respuesta": "Alemania ",
+        "incorrecta1": "Brasil",
+        "incorrecta2": "Francia",
+        "incorrecta3": "Portugal"
+    },
+    {
+        "categoria": "Deportes",
+        "pregunta": "¿Quién es el mejor jugador de ajedrez actualmente?",
+        "respuesta": "Magnus Carlsen",
+        "incorrecta1": "Lalo Landa",
+        "incorrecta2": "Leonardo Da Vinci",
+        "incorrecta3": "Fernando Gago"
+    },
+    {
+        "categoria": "Deportes",
+        "pregunta": "¿En qué año se celebró el primer Mundial de fútbol?",
+        "respuesta": "1930",
+        "incorrecta1": "1908",
+        "incorrecta2": "1390",
+        "incorrecta3": "1940"
+    }
+]

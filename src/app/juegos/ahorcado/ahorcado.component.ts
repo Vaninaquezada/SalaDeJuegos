@@ -64,6 +64,7 @@ export class AhorcadoComponent implements OnInit {
         "tiempo": "N/A",
         "resultado": "Perdio",
         "clicks": this.movimientos.toString(),
+        "correctas": "N/A",
         "juego": "Ahorcado",
         "errores": (this.MAX_ATTEMPTS - this.remainingAttempts).toString(),
       }

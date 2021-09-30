@@ -127,6 +127,7 @@ export class MijuegoComponent implements OnInit {
         "resultado": "Gano",
         "errores": "N/A",
         "clicks": this.estado.move.toString(),
+        "correctas": "N/A",
         "juego": "Rompecabezas",
       }
       this.listado.addResultado(this.resultado);

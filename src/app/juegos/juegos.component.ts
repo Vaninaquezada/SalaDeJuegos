@@ -21,6 +21,9 @@ export class JuegosComponent implements OnInit {
   irAhorcado() {
     this.router.navigate(['/juegos/ahorcado']);
   }
-  irPreguntados() { }
+  irPreguntados() {
+    this.router.navigate(['/juegos/preguntados']);
+  }
+
 
 }

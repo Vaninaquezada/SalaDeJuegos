@@ -6,5 +6,6 @@ export interface Lista {
     clicks?: string,
     juego?: string,
     errores?: string,
+    correctas?: string,
     createdAt?: any
 }
