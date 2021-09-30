@@ -41,6 +41,7 @@ export class PreguntadosComponent implements OnInit {
   victoria = '';
   start = 'visible';
   perdiste = '';
+  opcion = 'Siguiente';
   resultadoText = '';
   resultado = {};
   img: any[] = []
@@ -74,6 +75,7 @@ export class PreguntadosComponent implements OnInit {
     this.categoria = '';
     this.preguntaActual = '';
     this.numero = '';
+
     this.estiloImagen = '';
     this.estilos = [this.estilo1, this.estilo2, this.estilo3, this.estilo4];
     this.posibles_respuestas = [];
@@ -121,7 +123,11 @@ export class PreguntadosComponent implements OnInit {
     } else {
       this.escogerPreguntaAleatoria()
     }
-
+    if (this.cantPreguntas === 5) {
+      this.opcion = 'Finalizar';
+    } else {
+      this.opcion = 'Siguiente';
+    }
   }
 
 
@@ -165,11 +171,7 @@ export class PreguntadosComponent implements OnInit {
         break
       }
     }
-    /*  setTimeout(() => {
-        this.reiniciar()
-        this.suspender_botones = false;
-      }, 3000);
-      */
+
   }
 
   escogerPregunta(n: any) {
@@ -196,11 +198,6 @@ export class PreguntadosComponent implements OnInit {
       this.imagen = this.img[n].largeImageURL;
       //   this.estiloImagen = { "height": '0px', "width": '0px' };
       this.estiloImagen = { "height": '200px', "width": '100%' };
-
-      /*   setTimeout(() => {
-           this.imagen = "";
-         }, 500);
-         */
     }
 
   }
@@ -234,6 +231,7 @@ export class PreguntadosComponent implements OnInit {
     this.perdiste = "";
     this.victoria = "";
     this.start = '';
+
   }
   async getImg(imagen: any) {
     this.img = imagen;
